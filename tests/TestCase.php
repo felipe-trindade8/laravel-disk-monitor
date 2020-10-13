@@ -4,6 +4,7 @@ namespace FelipeTrindade8\LaravelDiskMonitor\Tests;
 
 use FelipeTrindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -15,6 +16,8 @@ class TestCase extends Orchestra
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'FelipeTrindade8\\LaravelDiskMonitor\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
+
+        Route::diskMonitor('disk-monitor');
     }
 
     protected function getPackageProviders($app)
