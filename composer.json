@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "felipe-trindade8/laravel-disk-monitor",
+    "description": "Pacote teste",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "felipe-trindade8",
+        "laravel-disk-monitor"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/felipe-trindade8/laravel-disk-monitor",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Felipe Trindade",
+            "email": "felipe.trindade8@outlook.com",
             "homepage": "https://spatie.be",
             "role": "Developer"
         }
@@ -27,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Felipe-trindade8\\LaravelDiskMonitor\\": "src",
+            "Felipe-trindade8\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Felipe-trindade8\\LaravelDiskMonitor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -48,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Felipe-trindade8\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "LaravelDiskMonitor": "Felipe-trindade8\\LaravelDiskMonitor\\LaravelDiskMonitorFacade"
             }
         }
     },
