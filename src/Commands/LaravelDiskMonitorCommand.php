@@ -1,6 +1,6 @@
 <?php
 
-namespace Felipe-trindade8\LaravelDiskMonitor\Commands;
+namespace FelipeTrindade8\LaravelDiskMonitor\Commands;
 
 use Illuminate\Console\Command;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Felipe-trindade8\LaravelDiskMonitor;
+namespace FelipeTrindade8\LaravelDiskMonitor;
 
 use Illuminate\Support\ServiceProvider;
-use Felipe-trindade8\LaravelDiskMonitor\Commands\LaravelDiskMonitorCommand;
+use FelipeTrindade8\LaravelDiskMonitor\Commands\LaravelDiskMonitorCommand;
 
 class LaravelDiskMonitorServiceProvider extends ServiceProvider
 {
@@ -19,7 +19,7 @@ class LaravelDiskMonitorServiceProvider extends ServiceProvider
             ], 'views');
 
             $migrationFileName = 'create_laravel_disk_monitor_table.php';
-            if (! $this->migrationFileExists($migrationFileName)) {
+            if (!$this->migrationFileExists($migrationFileName)) {
                 $this->publishes([
                     __DIR__ . "/../database/migrations/{$migrationFileName}.stub" => database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName),
                 ], 'migrations');

@@ -27,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Felipe-trindade8\\LaravelDiskMonitor\\": "src",
-            "Felipe-trindade8\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories"
+            "FelipeTrindade8\\LaravelDiskMonitor\\": "src",
+            "FelipeTrindade8\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Felipe-trindade8\\LaravelDiskMonitor\\Tests\\": "tests"
+            "FelipeTrindade8\\LaravelDiskMonitor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -48,11 +48,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Felipe-trindade8\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
-            ],
-            "aliases": {
-                "LaravelDiskMonitor": "Felipe-trindade8\\LaravelDiskMonitor\\LaravelDiskMonitorFacade"
-            }
+                "FelipeTrindade8\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

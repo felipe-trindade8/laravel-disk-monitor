@@ -1,6 +1,6 @@
 <?php
 
-namespace Felipe-trindade8\LaravelDiskMonitor\Tests;
+namespace FelipeTrindade8\LaravelDiskMonitor\Tests;
 
 class ExampleTest extends TestCase
 {

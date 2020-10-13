@@ -4,7 +4,6 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/felipe-trindade8/laravel-disk-monitor/run-tests?label=tests)](https://github.com/felipe-trindade8/laravel-disk-monitor/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/felipe-trindade8/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/felipe-trindade8/laravel-disk-monitor)
 
-
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Support us
@@ -26,13 +25,14 @@ composer require felipe-trindade8/laravel-disk-monitor
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Felipe-trindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="FelipeTrindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider" --tag="migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
+
 ```bash
-php artisan vendor:publish --provider="Felipe-trindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider" --tag="config"
+php artisan vendor:publish --provider="FelipeTrindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -44,14 +44,14 @@ return [
 
 ## Usage
 
-``` php
-$laravel-disk-monitor = new Felipe-trindade8\LaravelDiskMonitor();
-echo $laravel-disk-monitor->echoPhrase('Hello, Felipe-trindade8!');
+```php
+$laravel-disk-monitor = new FelipeTrindade8\LaravelDiskMonitor();
+echo $laravel-disk-monitor->echoPhrase('Hello, FelipeTrindade8!');
 ```
 
 ## Testing
 
-``` bash
+```bash
 composer test
 ```
 
@@ -69,8 +69,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Felipe Trindade](https://github.com/felipe-trindade8)
-- [All Contributors](../../contributors)
+-   [Felipe Trindade](https://github.com/felipe-trindade8)
+-   [All Contributors](../../contributors)
 
 ## License
 

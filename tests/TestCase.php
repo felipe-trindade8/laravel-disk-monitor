@@ -1,10 +1,10 @@
 <?php
 
-namespace Felipe-trindade8\LaravelDiskMonitor\Tests;
+namespace FelipeTrindade8\LaravelDiskMonitor\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Felipe-trindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider;
+use FelipeTrindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Felipe-trindade8\\LaravelDiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'FelipeTrindade8\\LaravelDiskMonitor\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
