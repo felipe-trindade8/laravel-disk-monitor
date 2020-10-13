@@ -33,9 +33,8 @@ class TestCase extends Orchestra
             'prefix' => '',
         ]);
 
-        /*
-        include_once __DIR__.'/../database/migrations/create_laravel_disk_monitor_table.php.stub';
-        (new \CreatePackageTable())->up();
-        */
+
+        include_once __DIR__ . '/../database/migrations/create_laravel_disk_monitor_table.php.stub';
+        (new \CreateLaravelDiskMonitorTable())->up();
     }
 }
