@@ -3,7 +3,6 @@
 namespace FelipeTrindade8\LaravelDiskMonitor\Tests;
 
 use FelipeTrindade8\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
 
