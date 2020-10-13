@@ -44,7 +44,6 @@ class RecordDiskMetricsCommandTest extends TestCase
         $this->assertEquals(1, $entry->file_count);
     }
 
-
     /** @test */
     public function it_will_record_the_file_count_for_multiple_disks()
     {
