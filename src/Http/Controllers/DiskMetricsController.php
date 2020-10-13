@@ -2,7 +2,6 @@
 
 namespace FelipeTrindade8\LaravelDiskMonitor\Http\Controllers;
 
-use Exception;
 use FelipeTrindade8\LaravelDiskMonitor\Models\DiskMonitorEntry;
 
 class DiskMetricsController

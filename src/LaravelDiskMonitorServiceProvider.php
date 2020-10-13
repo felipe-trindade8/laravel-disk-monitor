@@ -46,7 +46,7 @@ class LaravelDiskMonitorServiceProvider extends ServiceProvider
             ], 'views');
 
             $migrationFileName = 'create_laravel_disk_monitor_table.php';
-            if (!$this->migrationFileExists($migrationFileName)) {
+            if (! $this->migrationFileExists($migrationFileName)) {
                 $this->publishes([
                     __DIR__ . "/../database/migrations/{$migrationFileName}.stub" => database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName),
                 ], 'migrations');
@@ -63,6 +63,7 @@ class LaravelDiskMonitorServiceProvider extends ServiceProvider
                 LaravelDiskMonitorCommand::class,
             ]);
         }
+
         return $this;
     }
 
