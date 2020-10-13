@@ -13,10 +13,6 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'FelipeTrindade8\\LaravelDiskMonitor\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
-        );
-
         Route::diskMonitor('disk-monitor');
     }
 
