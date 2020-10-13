@@ -31,7 +31,7 @@ class LaravelDiskMonitorCommand extends Command
 
         DiskMonitorEntry::create([
             'disk_name' => $disk_name,
-            'file_count' => $file_count
+            'file_count' => $file_count,
         ]);
     }
 }
